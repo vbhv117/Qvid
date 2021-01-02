@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="10dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/passwordid"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password"
+        android:hint="Password"/>
+    <Button
+        android:id="@+id/loginBut"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?attr/colorControlActivated"
+        android:fontFamily="@font/acme"
+        android:text="Login"/>
+
+</LinearLayout>
